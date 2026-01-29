@@ -5,9 +5,10 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Register from './components/register'
 import Login from './components/Login'
-
+import AuthProvider from './AuthProvider'
 function App() {
   return (
+    <AuthProvider>
     <BrowserRouter>
       <Header />
       <Routes>
@@ -17,6 +18,7 @@ function App() {
       </Routes>
       <Footer />
     </BrowserRouter>
+    </AuthProvider>
   )
 }
 

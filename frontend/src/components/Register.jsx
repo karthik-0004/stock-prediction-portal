@@ -3,11 +3,11 @@ import axios from 'axios'
 
 const Register = () => {
   const [username, setUsername] = useState('')
-  const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
+  const[loading, setloading] = useState(false)
+  const [email, setEmail] = useState('')
   const [errors, seterrors] = useState({})
   const[success, setsuccess] = useState(false)
-  const[loading, setloading] = useState(false)
 
   const handleregistration = async (e) => {
     e.preventDefault()
