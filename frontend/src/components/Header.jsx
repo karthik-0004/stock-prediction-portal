@@ -1,14 +1,16 @@
 import React from 'react'
 import Button from './Button'
+import { Link } from 'react-router-dom'
+
 const Header = () => {
   return (
     <>
       <nav className='navbar container pt-3 pb-3 align-items-lg-start'>
-        <a className='navbar-brand text-light' href='"'>Stock Price prediction </a>
+        <Link className='navbar-brand text-light' to={"/"}>Stock Price prediction </Link>
+
         <div>
-          <Button text = 'login' class='btn-outline-info'/>
-          $nbsp;
-          <Button text = 'Register' class='btn-info'/>
+          <Button text="Login" url="/login" class="btn-outline-info" />
+          <Button text="Register" url="/register" class="btn-info" />
         </div>
       </nav>
 
